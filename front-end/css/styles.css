@@ -1,0 +1,96 @@
+html {
+   font-family: 'Roboto', sans-serif;
+}
+
+#container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   background-image: url('../assets/icon_mulher.svg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-position-x: calc(250px + 55%);
+}
+
+#logo {
+   margin: 2vh 0;
+   text-align: center;
+}
+
+#logo img {
+   height: 30px;
+}
+
+#wrapper {
+   width: calc(10% + 300px);
+   max-width: 400px;
+}
+
+.form {
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   /* Gray 6 */
+   background: #F2F2F2;
+   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+}
+
+#form-login {
+   display: flex;
+   height: 38vh;
+}
+
+#form-register {
+   display: none;
+   height: 55vh;
+   animation: transition 150ms;
+}
+
+.form input {
+   padding: 0 10px;
+   width: 80%;
+   margin: 1vh 0;
+   height: 6vh;
+   background: #FFFFFF;
+   border-radius: 10px;
+   border: none;
+   outline: none;
+}
+
+.button {
+   background: #6FCF97;
+   border-radius: 10px;
+   border: none;
+   outline-color: #777777;
+   width: calc(80% + 20px);
+   margin: 2vh 0 1.5vh;
+   height: 6vh;
+}
+
+.holder {
+   text-align: center;
+}
+
+.holder span {
+   color: #333333;
+   font-size: 14px;
+}
+
+.holder a {
+   color: #2F80ED;
+   text-decoration: none;
+}
+
+/* -------- ANIMAÇÕES -------- */
+
+@keyframes transition {
+   from {
+      height: 38vh;
+   }
+   to {
+      height: 55vh;
+   }
+}
