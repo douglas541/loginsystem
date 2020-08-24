@@ -2,20 +2,20 @@ html {
    font-family: 'Roboto', sans-serif;
 }
 
-#container {
+#login-page {
    display: flex;
    align-items: center;
    justify-content: center;
    height: 100vh;
-   background-image: url('../assets/icon_mulher.svg');
+   background-image: url('../../assets/icon_mulher.svg');
    background-repeat: no-repeat;
    background-position: center;
    background-position-x: calc(250px + 55%);
 }
 
 #notification {
-   height: 7vh;
-   width: calc(230px + 10%);
+   height: 6vh;
+   width: calc(200px + 10%);
    display: none;
    flex-direction: row;
    position: absolute;
@@ -32,13 +32,13 @@ html {
    align-items: center;
    justify-content: center;
    /* Green 3 */
-   background: #6FCF97;
+   background: var(--color-primary);
    border-radius: 10px 0px 0px 10px;
 }
 
 #xbox {
    width: 13%;
-   background: #27AE60;
+   background: var(--color-primary-darker);
    border-radius: 0px 10px 10px 0px;
    display: flex;
    align-items: center;
@@ -56,7 +56,7 @@ html {
 }
 
 #logo img {
-   height: 30px;
+   height: 4vh;
 }
 
 .form {
@@ -65,7 +65,7 @@ html {
    justify-content: center;
    width: 100%;
    /* Gray 6 */
-   background: #F2F2F2;
+   background: var(--color-background);
    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
    border-radius: 10px;
 }
@@ -86,17 +86,17 @@ html {
    width: 80%;
    margin: 1vh 0;
    height: 6vh;
-   background: #FFFFFF;
+   background: var(--color-white);
    border-radius: 10px;
    border: none;
    outline: none;
 }
 
 .button {
-   background: #6FCF97;
+   background: var(--color-primary);
    border-radius: 10px;
    border: none;
-   outline-color: #777777;
+   outline-color: #999999;
    width: calc(80% + 20px);
    margin: 2vh 0 1.5vh;
    height: 6vh;
@@ -107,13 +107,18 @@ html {
 }
 
 .holder span {
-   color: #333333;
+   color: var(--color-text-primary);
    font-size: 14px;
 }
 
 .holder a {
-   color: #2F80ED;
+   color: var(--color-secondary);
    text-decoration: none;
+   font-size: 1.43rem;
+}
+
+#notificationtext {
+   font-size: 1.43rem;
 }
 
 /* -------- ANIMAÇÕES -------- */

@@ -4,62 +4,14 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Home</title>
    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="./global.css">
-   <link rel="stylesheet" href="./pages/Home/styles.css">
-   <link rel="stylesheet" href="./pages/Home/responsive.css">
-   <link rel="stylesheet" href="./pages/Login/styles.css">
-   <link rel="stylesheet" href="./pages/Login/responsive.css">
-   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-   <script>
-      // alert('teste');
-   </script>
+   <link rel="stylesheet" href="../../global.css">
+   <link rel="stylesheet" href="./styles.css">
+   <link rel="stylesheet" href="./responsive.css">
 </head>
 
 <body>
-   <div id="login-page">
-
-      <div id="notification">
-         <div id="textbox">
-            <span id="notificationtext"></span>
-         </div>
-         <div id="xbox">
-            <a href="#" id="ximage"><img src="../../assets/X.svg" alt="ximage"></a>
-         </div>
-      </div>
-
-      <div id="wrapper">
-
-         <div id="logo">
-            <img src="../../assets/logo.svg" alt="PodeCast logo">
-         </div>
-
-         <div class="form" id="form-login">
-            <input type="text" class="field" id="email-login" placeholder="Digite seu e-mail">
-            <input type="password" class="field" id="password-login" placeholder="Digite sua senha">
-            <button class="button" id="button-login">Entrar</button>
-            <div class="holder" id="holder-login">
-               <span>Não tem conta?</span>
-               <a href="#" id="holder-login-a">Cadastre-se</a>
-            </div>
-         </div>
-
-         <div class="form" id="form-register">
-            <input type="text" class="field" id="name-register" placeholder="Digite seu nome">
-            <input type="text" class="field" id="email-register" placeholder="Digite seu e-mail">
-            <input type="password" class="field" id="password-register" placeholder="Digite sua senha">
-            <input type="password" class="field" id="repassword-register" placeholder="Digite sua senha novamente">
-            <button class="button" id="button-register">Cadastrar</button>
-            <div class="holder" id="holder-register">
-               <span>Já é cadastrado?</span>
-               <a href="#" id="holder-register-a">Voltar</a>
-            </div>
-         </div>
-
-      </div>
-   </div>
-
    <div id="main-page">
 
       <div id="main-page-header">
@@ -67,13 +19,20 @@
          <div class="header container">
 
             <div class="text content">
-               
+               <h1>Olá Douglas, seja bem vindo!</h1>
+            </div>
+
+            <div class="login content">
+               <a href="">
+                  <span>Entrar</span>
+                  <img src="../../assets/user-icon.svg" alt="">
+               </a>
             </div>
 
             <div class="logout content">
-               <a href="" id="logout-button">
+               <a href="">
                   <span>Sair</span>
-                  <!-- <img src="../../assets/logout-icon.svg" alt=""> -->
+                  <img src="../../assets/logout-icon.svg" alt="">
                </a>
             </div>
 
@@ -135,8 +94,6 @@
          </div>
       </div>
    </div>
-
-   <script src="./main.js"></script>
 </body>
 
 </html>
