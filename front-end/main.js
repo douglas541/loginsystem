@@ -21,7 +21,6 @@ axios({
    headers: { 'Authorization': 'Baerer ' + token }
 })
    .then((res) => {
-      console.log(res.data);
       renderPage('main', `${res.data.name}`);
    })
    .catch((error) => {
@@ -129,6 +128,7 @@ function register() {
                notificationMessage('Usuário já existente') :
                notificationMessage('Falha ao cadastrar!');
          });
+         
    }
    //loginAnimation();
    //notificationMessage('Teste de cadastro!');
